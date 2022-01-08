@@ -81,24 +81,21 @@ form input[type="text"] {
 	padding: .6rem .4rem;
 	color: #ffffff;
 }
-form input[type="submit"] {
+.add-button, .new-button {
 	border: none;
 	display: block;
 	width: 100%;
 	color: #ffffff;
 	margin: 2rem 0;
 	padding: 1rem;
-	font-weight: 500;
+	font-weight: 700;
 	text-transform: uppercase;
 	background-color: #f37970;
 	text-align: center;
 	border-radius: 4px;
-	transition: background-color .3s ease-in-out;
 	font-family: 'Lato', sans-serif;
 	cursor: pointer;
-}
-form input[type="submit"]:hover {
-	background-color: #fabec0;
+	text-decoration: none;
 }
 .actions {
 	display: flex;

@@ -1,0 +1,20 @@
+{% extends "bases/base.html" %}
+
+{% block form %}
+<div class="container background-pink" id="add">
+	<h1 class="title">Edit Book</h1>
+	<form class="add-book" method="POST">
+		{% csrf_token %}
+		<div class="name">
+			<label for="name">Name</label>
+			<input type="text" name="name" id="nombre" value="{{ book.name }}">
+		</div>
+		<div class="author">
+			<label for="author">Author</label>
+			<input type="text" name="author" id="author" value="{{ book.author }}">
+		</div>
+		<input type="hidden" name="action" value="update">
+		<button type="submit" id="submit" class="add-button">Save</button>
+	</form>
+</div>
+{% endblock form %}

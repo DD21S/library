@@ -1,4 +1,4 @@
-{% load 'static' %}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +16,9 @@
 	
 	{% endblock form %}
 
-	<div class="container background-pink">
-		{% block page_content %}
 	
-		{% endblock page_content %}
-	</div>
+	{% block page_content %}
+	
+	{% endblock page_content %}
 </body>
 </html>
